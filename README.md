@@ -27,6 +27,8 @@ Install the [v0.31 release of Digital](https://github.com/hneemann/Digital/relea
 
 Then, open `main.dig`.  Press the play button to start the simulation. It may take a minute for the simulation to produce a frame. A window will popup when the simulator has acquired sync lock on the output signal. You may need to resize this window to see the entire output. 
 
+The CRTC is initialized for Area 5150's "ANSI from hell" mode to show the demo's splash screen. There are few mode presets in the `mc6845_10.v` file you can edit if you say, want regular 80x25 text mode. Just edit the `STARTUP_MODE` variable at the top of the file and save.  Digital should pick up the changes the next time you start the simulation.
+
 You can load video memory with different things. 
 - Locate the MCM4517 component in the "Video Memory" box at bottom-center. 
 - Right click on the MCM4517 and click *open*.
