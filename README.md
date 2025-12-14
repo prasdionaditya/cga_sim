@@ -36,7 +36,7 @@ You can load video memory with different things.
   - Some ready-made VRAM images are supplied in [vram](vram/).
 
 Note if you want to change the overscan color you will need to set a new color in the Color Control register directly to the right of the CRTC. 
-There is a "palette" of tunnels at the top of the diagram - copy one of the tunnels and attach it to the splitter that feeds the CC register.
+There is a CGA palette reference at the top of the diagram. 
 
 # Shout outs
 
